@@ -51,8 +51,8 @@ int main(int argc, char** argv){
     ROS_INFO("Waiting for the move_base action server to come up");
   }
 
-  move_base_msgs::MoveBaseGoal pickup_goal  = setGoal(-1,0 , 0.679776960744, 0.733418900521);
-  move_base_msgs::MoveBaseGoal dropoff_goal = setGoal(1,0, 0.703485544441, 0.710709567096);
+  move_base_msgs::MoveBaseGoal pickup_goal  = setGoal(-2,0 , 0.679776960744, 0.733418900521);
+  move_base_msgs::MoveBaseGoal dropoff_goal = setGoal(2,0, 0.703485544441, 0.710709567096);
 
   // Send the goal position and orientation for the robot to reach
   ROS_INFO("Sending pickup goal");

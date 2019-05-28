@@ -8,8 +8,8 @@ private:
     ros::Publisher marker_pub;
     ros::Subscriber odom_sub;
     visualization_msgs::Marker marker;
-    double pickupZone[2] = {-1, 0};
-    double dropoffZone[2] = {1,0};
+    double pickupZone[2] = {-2, 0};
+    double dropoffZone[2] = {2,0};
     double threshold;
 		const int threshold_multiplier = 3;
 
